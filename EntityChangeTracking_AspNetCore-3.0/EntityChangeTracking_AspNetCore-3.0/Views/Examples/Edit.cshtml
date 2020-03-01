@@ -1,0 +1,49 @@
+﻿@model EntityChangeTracking_AspNetCore_3._0.Models.Example
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Example</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="FieldA" class="control-label"></label>
+                <input asp-for="FieldA" class="form-control" />
+                <span asp-validation-for="FieldA" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FieldB" class="control-label"></label>
+                <input asp-for="FieldB" class="form-control" />
+                <span asp-validation-for="FieldB" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FieldC" class="control-label"></label>
+                <input asp-for="FieldC" class="form-control" />
+                <span asp-validation-for="FieldC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FieldD" class="control-label"></label>
+                <input asp-for="FieldD" class="form-control" />
+                <span asp-validation-for="FieldD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

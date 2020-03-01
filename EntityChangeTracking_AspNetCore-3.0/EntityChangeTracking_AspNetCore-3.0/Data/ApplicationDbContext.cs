@@ -58,5 +58,7 @@ namespace EntityChangeTracking_AspNetCore_3._0.Data
                 ((ITimestamp)e.Entity).EditedBy = userName;
             }
         }
+
+        public DbSet<EntityChangeTracking_AspNetCore_3._0.Models.Example> Example { get; set; }
     }
 }
