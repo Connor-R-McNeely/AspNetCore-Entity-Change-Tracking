@@ -1,4 +1,4 @@
-# AspNetCore_EntityChangeTracking
+# EntityChangeTracking
 Quick solution to add fields to EF Core entities for tracking changes to them. Adds CreatedDateTime, CreatedBy, EditedDateTime, EditedBy
 
 See [1f5d59a](https://github.com/Connor-R-McNeely/AspNetCore_EntityChangeTracking/commit/1f5d59a646b79c0285317ec55e6afc1407993143) for necessary code changes.
